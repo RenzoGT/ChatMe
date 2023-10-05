@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+header {
+  padding: 0 1rem 0 1rem;
+  background-color: #000000;
+  height: 5rem;
+  border-bottom: 1px solid white;
+}
+
+header div,
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  appearance: none;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+}
+
+header img {
+  border-radius: 50%;
+  width: 3rem;
+  margin-right: 1rem;
+}
+
+#login {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login button {
+  padding: 1rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+}
+
+#login i {
+  margin-right: 1rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+#container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container form input {
+  border-radius: 1rem;
+  height: 2.5rem;
+  width: 70%;
+  padding-left: 1rem;
+}
+
+#container form button {
+  border-radius: 1rem;
+  height: 2.5rem;
+  width: 15%;
+}
+
+#messages {
+  padding: 0.3rem;
+  overflow-y: auto;
+}
+
+#messages img {
+  border-radius: 50%;
+  width: 2rem;
+}
+
+#messages .box {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.288);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  max-width: 70%;
+  padding: 0.3rem;
+}
+
+#messages .box p {
+  word-break: break-all;
+}
+
+#messages .sent,
+#messages .received {
+  margin-bottom: 0.2rem;
+}
+
+#messages .sent {
+  display: flex;
+  justify-content: right;
+}
+
+#messages .sent img {
+  margin-left: 0.3rem;
+}
+
+#messages .received {
+  display: flex;
+  justify-content: left;
+}
+
+#messages .received .box {
+  flex-direction: row-reverse;
+}
+
+#messages .received img {
+  margin-right: 0.3rem;
+}
