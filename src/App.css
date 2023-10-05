@@ -82,6 +82,7 @@ header img {
 #messages {
   padding: 0.3rem;
   overflow-y: auto;
+  height: 80%;
 }
 
 #messages img {
