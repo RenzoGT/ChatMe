@@ -35,7 +35,7 @@ const App = () => {
 
   const [user] = useAuthState(auth);
   return (
-    <>
+    <div>
       <header>
         <h1>ChatMe</h1>
         <div>
@@ -45,7 +45,7 @@ const App = () => {
       </header>
 
       <section>{user ? <ChatRoom user={user} /> : <SignIn />}</section>
-    </>
+    </div>
   );
 };
 
@@ -73,7 +73,7 @@ const SignOut = () => {
 };
 
 const ChatRoom = (props) => {
-  const q = query(collection(firestore, "messages"), orderBy("date"));
+  const q = query(collection(firestore, "messages"), orderBy("id"));
 
   const [value] = useCollectionData(q);
 
@@ -89,6 +89,7 @@ const ChatRoom = (props) => {
       msg: inputText,
       pic: props.user.photoURL,
       uid: props.user.uid,
+      id: value.length,
     });
 
     ref.current?.scrollTo({ top: 1000000, behavior: "smooth" });
