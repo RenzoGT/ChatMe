@@ -5,12 +5,15 @@
 
 body {
   color: white;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  height: 100%;
 }
 
 html {
-  height: -webkit-fill-available;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 header {
@@ -61,7 +64,7 @@ header img {
 #container {
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  justify-content: space-between;
 }
 
 #container form {
@@ -75,6 +78,7 @@ header img {
   height: 2.5rem;
   width: 70%;
   padding-left: 1rem;
+  font-size: 1rem;
 }
 
 #container form button {
@@ -86,7 +90,7 @@ header img {
 #messages {
   padding: 0.3rem;
   overflow-y: auto;
-  height: 80%;
+  max-height: 80vh;
 }
 
 #messages img {

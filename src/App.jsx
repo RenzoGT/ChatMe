@@ -35,7 +35,7 @@ const App = () => {
 
   const [user] = useAuthState(auth);
   return (
-    <div>
+    <>
       <header>
         <h1>ChatMe</h1>
         <div>
@@ -45,7 +45,7 @@ const App = () => {
       </header>
 
       <section>{user ? <ChatRoom user={user} /> : <SignIn />}</section>
-    </div>
+    </>
   );
 };
 
