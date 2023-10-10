@@ -5,7 +5,6 @@
 
 body {
   color: white;
-  height: 100%;
   height: -webkit-fill-available;
 }
 
@@ -64,7 +63,7 @@ header img {
 
 section,
 #container {
-  height: calc(100vh - 5rem);
+  height: auto;
 }
 
 #container {
@@ -77,6 +76,9 @@ section,
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 #container form input {
@@ -95,8 +97,9 @@ section,
 
 #messages {
   padding: 0.3rem;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: auto;
+  max-height: 84vh;
 }
 
 #messages img {
